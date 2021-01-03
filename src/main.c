@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
 	byte* execFile = readFile(argv[1]);
 	if(execFile == NULL) {
 	    fprintf(stderr, "File \"%s\" does not exist!\n", argv[1]);
-        return EXIT_FAILURE;
+	    return EXIT_FAILURE;
 	}
 
 	sim_init(execFile, argc, argv);

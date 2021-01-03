@@ -374,7 +374,7 @@ err_code syscall() {
             char* buf = (char*) getRealAddr(registers[4]); // Address of buf in str 1
             size_t buflen = registers[5];
             registers[2] = registers[4];
-            getline(&buf, &buflen, stdin);
+            fgets(buf, buflen, stdin);
             return SUCCESS;
         }
         case 10:
