@@ -21,5 +21,7 @@ int main(int argc, char* argv[]) {
 	sim_run();
 	sim_exit();
 
+	free(execFile);
+
 	return EXIT_SUCCESS;
 }

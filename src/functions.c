@@ -368,6 +368,7 @@ err_code syscall() {
                 registers[2] = in;
                 registers[3] = 0;
             }
+            free(buf);
             return SUCCESS;
         }
         case 8: {
